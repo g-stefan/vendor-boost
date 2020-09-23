@@ -49,6 +49,8 @@
 *.o2elf
 *.config.md5
 /bin/
-/build/
+/include/
 /lib/
-/boost-1.70.0/
+/source/
+/build/
+/release/
