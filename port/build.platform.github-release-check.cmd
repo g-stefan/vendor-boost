@@ -5,7 +5,7 @@ rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
-echo -^> git-release-check vendor-boost
+echo -^> github-release-check vendor-boost
 
 set PROJECT=vendor-boost
 SET PROJECT_VENDOR=%PROJECT:vendor-=%
