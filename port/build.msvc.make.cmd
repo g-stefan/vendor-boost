@@ -41,6 +41,7 @@ set CMD_RUN=%CMD_RUN% link=static
 set CMD_RUN=%CMD_RUN% threading=multi
 set CMD_RUN=%CMD_RUN% runtime-link=static
 set CMD_RUN=%CMD_RUN% architecture=x86
+set CMD_RUN=%CMD_RUN% -j 16
 
 if "%XYO_PLATFORM%" == "win64-msvc-2019" set CMD_RUN=%CMD_RUN% address-model=64
 if "%XYO_PLATFORM%" == "win32-msvc-2019" set CMD_RUN=%CMD_RUN% address-model=32
