@@ -22,12 +22,12 @@ if not "%ACTION%" == "make" goto :eof
 
 call :cmdX xyo-cc --mode=%ACTION% --source-has-archive boost
 
-if not exist build\ mkdir build
+if not exist temp\ mkdir temp
 
 set INCLUDE=%XYO_PATH_REPOSITORY%\include;%INCLUDE%
 set LIB=%XYO_PATH_REPOSITORY%\lib;%LIB%
 set WORKSPACE_PATH=%CD%
-set WORKSPACE_PATH_BUILD=%WORKSPACE_PATH%\build
+set WORKSPACE_PATH_BUILD=%WORKSPACE_PATH%\temp
 
 if exist %WORKSPACE_PATH_BUILD%\build.done.flag goto :eof
 
