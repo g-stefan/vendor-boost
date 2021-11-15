@@ -23,11 +23,11 @@ del /F /Q archive\%PROJECT%-%VERSION%.7z goto:eof
 rem Source
 pushd archive
 set VENDOR=%PROJECT%-%VERSION%
-set WEB_LINK=https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.zip
+set WEB_LINK=https://boostorg.jfrog.io/artifactory/main/release/1.77.0/source/boost_1_77_0.zip
 if not exist %VENDOR%.zip curl --insecure --location %WEB_LINK% --output %VENDOR%.zip
 7z x -aoa -o. %VENDOR%.zip
 del /F /Q %VENDOR%.zip
-move boost_1_74_0 boost-1.74.0
+move boost_1_77_0 boost-1.77.0
 if exist %VENDOR%.7z del /F /Q %VENDOR%.7z
 7zr a -mx9 -mmt4 -r- -sse -w. -y -t7z %VENDOR%.7z %VENDOR%
 rmdir /Q /S %VENDOR%

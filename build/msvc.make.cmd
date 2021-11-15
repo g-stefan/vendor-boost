@@ -33,7 +33,7 @@ if exist %WORKSPACE_PATH_BUILD%\build.done.flag goto :eof
 
 pushd source
 
-cmd.exe /C bootstrap.bat
+cmd.exe /C bootstrap.bat vc142
 
 set CMD_RUN=b2
 set CMD_RUN=%CMD_RUN% variant=release
@@ -43,8 +43,12 @@ set CMD_RUN=%CMD_RUN% runtime-link=static
 set CMD_RUN=%CMD_RUN% architecture=x86
 set CMD_RUN=%CMD_RUN% -j 16
 
+if "%XYO_PLATFORM%" == "win64-msvc-2022" set CMD_RUN=%CMD_RUN% address-model=64
+if "%XYO_PLATFORM%" == "win32-msvc-2022" set CMD_RUN=%CMD_RUN% address-model=32
+
 if "%XYO_PLATFORM%" == "win64-msvc-2019" set CMD_RUN=%CMD_RUN% address-model=64
 if "%XYO_PLATFORM%" == "win32-msvc-2019" set CMD_RUN=%CMD_RUN% address-model=32
+
 if "%XYO_PLATFORM%" == "win64-msvc-2017" set CMD_RUN=%CMD_RUN% address-model=64
 if "%XYO_PLATFORM%" == "win32-msvc-2017" set CMD_RUN=%CMD_RUN% address-model=32
 
