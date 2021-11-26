@@ -3,4 +3,4 @@ rem Public domain
 rem http://unlicense.org/
 rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
-echo -^> sign vendor-boost
+echo - %BUILD_PROJECT% ^> vendor
