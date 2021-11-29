@@ -22,11 +22,13 @@ if not "%ACTION%" == "make" goto :eof
 
 call :cmdX xyo-cc --mode=%ACTION% --source-has-archive boost
 
+if not exist output\ mkdir output
 if not exist temp\ mkdir temp
 
 set INCLUDE=%XYO_PATH_REPOSITORY%\include;%INCLUDE%
 set LIB=%XYO_PATH_REPOSITORY%\lib;%LIB%
 set WORKSPACE_PATH=%CD%
+set WORKSPACE_PATH_OUTPUT=%WORKSPACE_PATH%\output
 set WORKSPACE_PATH_BUILD=%WORKSPACE_PATH%\temp
 
 if exist %WORKSPACE_PATH_BUILD%\build.done.flag goto :eof
@@ -54,7 +56,7 @@ if "%XYO_PLATFORM%" == "win32-msvc-2017" set CMD_RUN=%CMD_RUN% address-model=32
 
 set CMD_RUN=%CMD_RUN% toolset=msvc
 set CMD_RUN=%CMD_RUN% --layout=system
-set CMD_RUN=%CMD_RUN% --prefix="%WORKSPACE_PATH_BUILD%/boost"
+set CMD_RUN=%CMD_RUN% --prefix="%WORKSPACE_PATH_OUTPUT%"
 set CMD_RUN=%CMD_RUN% --no-cmake-config
 set CMD_RUN=%CMD_RUN% --build-type=minimal
 set CMD_RUN=%CMD_RUN% --build-dir="%WORKSPACE_PATH_BUILD%/boost-build"

@@ -13,5 +13,5 @@ rem --- dev
 if not exist "%INSTALL_PATH_DEV%\" mkdir "%INSTALL_PATH_DEV%"
 if not exist "%INSTALL_PATH_DEV%\include" mkdir "%INSTALL_PATH_DEV%\include"
 if not exist "%INSTALL_PATH_DEV%\lib" mkdir "%INSTALL_PATH_DEV%\lib"
-xcopy /Y /S /E "temp\boost\include\" "%INSTALL_PATH_DEV%\include\"
-copy /Y /B "temp\boost\lib\*.lib" "%INSTALL_PATH_DEV%\lib\*"
+xcopy /Y /S /E "output\include\" "%INSTALL_PATH_DEV%\include\"
+copy /Y /B "output\lib\*.lib" "%INSTALL_PATH_DEV%\lib\*"
