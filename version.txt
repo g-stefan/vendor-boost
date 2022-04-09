@@ -1,1 +1,1 @@
-boost-1.77.0,https://www.boost.org/users/download/
+boost-1.78.0,https://www.boost.org/users/download/
