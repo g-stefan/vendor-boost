@@ -1,0 +1,9 @@
+{
+	"project": {
+		"name" : "boost",
+		"type" : "xyo-cpp",
+		"SPDX-License-Identifier": "LicenseRef-",
+		"sourceLink" : "https://www.boost.org/users/download/",
+		"version" : "1.78.0"
+	}
+}
