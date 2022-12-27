@@ -2,7 +2,7 @@
 	"project": {
 		"name" : "boost",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "LicenseRef-",
+		"SPDX-License-Identifier": "BSL-1.0",
 		"sourceLink" : "https://www.boost.org/users/download/",
 		"version" : "1.78.0"
 	}
