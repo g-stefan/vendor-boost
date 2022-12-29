@@ -4,6 +4,9 @@
 		"type" : "xyo-cpp",
 		"SPDX-License-Identifier": "BSL-1.0",
 		"sourceLink" : "https://www.boost.org/users/download/",
-		"version" : "1.78.0"
+		"version" : "1.81.0",
+		"hasRelease" : true,
+		"noVersion" : true,
+		"githubRelease" : true
 	}
 }

@@ -26,7 +26,7 @@ Shell.removeFile("archive/" + Project.vendor + ".7z");
 
 // Source
 runInPath("archive", function() {
-	webLink = "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.zip";
+	webLink = "https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.zip";
 	if (!Shell.fileExists(Project.vendor + ".zip")) {
 		exitIf(Shell.system("curl --insecure --location " + webLink + " --output " + Project.vendor + ".zip"));
 	};
