@@ -1,13 +1,17 @@
 {
-	"project": {
-		"name" : "boost",
+	"solution": {
+		"name" : "vendor-boost",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "BSL-1.0",
-		"sourceLink" : "https://www.boost.org/users/download/",
-		"version" : "1.81.0",
-		"hasRelease" : true,
-		"noVersion" : true,
-		"githubRelease" : true,
-		"githubRepository" : "vendor-boost"
+		"projects": [
+			{
+				"name" : "boost",
+				"SPDX-License-Identifier": "BSL-1.0",
+				"sourceLink" : "https://www.boost.org/users/download/",
+				"version" : "1.81.0",
+				"noVersion" : true
+			}
+		],
+		"releaseName" : "boost",
+		"hasGithub" : true
 	}
 }
