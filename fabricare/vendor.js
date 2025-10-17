@@ -35,14 +35,14 @@ Shell.removeFile("archive/" + Project.vendor + ".7z");
 
 // Source
 runInPath("archive", function() {
-	webLink = "https://boostorg.jfrog.io/artifactory/main/release/1.84.0/source/boost_1_84_0.zip";
+	webLink = "https://archives.boost.io/release/1.89.0/source/boost_1_89_0.zip";
 	if (!Shell.fileExists(Project.vendor + ".zip")) {
 		exitIf(Shell.system("curl --insecure --location " + webLink + " --output " + Project.vendor + ".zip"));
 	};
 	exitIf(Shell.system("7z x " + Project.vendor + ".zip -aoa -o."));
 	Shell.removeFile(Project.vendor + ".zip");
 	Shell.removeFile(Project.vendor + ".7z");
-	Shell.rename("boost_1_84_0","boost-1.84.0");
+	Shell.rename("boost_1_89_0","boost-1.89.0");
 	exitIf(Shell.system("7z a -mx9 -mmt4 -r- -sse -w. -y -t7z " + Project.vendor + ".7z " + Project.vendor));
 	Shell.removeDirRecursivelyForce(Project.vendor);
 });

@@ -6,8 +6,8 @@
 			{
 				"name" : "boost",
 				"SPDX-License-Identifier": "BSL-1.0",
-				"sourceLink" : "https://www.boost.org/users/download/",
-				"version" : "1.84.0",
+				"sourceLink" : "https://www.boost.org/releases/latest/",
+				"version" : "1.89.0",
 				"noVersion" : true
 			}
 		],
