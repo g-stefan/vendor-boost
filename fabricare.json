@@ -1,5 +1,6 @@
 {
 	"solution": {
+		"namespace" : "xyo",
 		"name" : "vendor-boost",
 		"type" : "xyo-cpp",
 		"projects": [
@@ -7,7 +8,7 @@
 				"name" : "boost",
 				"SPDX-License-Identifier": "BSL-1.0",
 				"sourceLink" : "https://www.boost.org/releases/latest/",
-				"version" : "1.89.0",
+				"version" : "1.92.0",
 				"noVersion" : true
 			}
 		],

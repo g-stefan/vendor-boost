@@ -23,7 +23,7 @@ Shell.mkdirRecursivelyIfNotExists("temp");
 
 runInPath("source",function(){
 
-	Shell.system("cmd.exe /C bootstrap.bat vc142");
+	Shell.system("cmd.exe /C bootstrap.bat vc145");
 
 	var cmd="b2";
 	cmd+=" variant=release";
